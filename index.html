@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kép Galéria</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">Rólam</a>
+      <a href="#gallery">Galéria</a>
+      <a href="#contact">Kapcsolat</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>Rólam</h1>
+    <p>Hobbi festőként örömmel mutatom meg alkotásaimat azoknak, akik szívesen megtekintenék vagy megvásárolnák őket.</p>
+    <p>Amennyiben valamelyik kép felkelti érdeklődését, kérem jelezze az elérhetőségeimen, hogy megbeszélhessük a további részleteket.</p>
+    <p>Részletes információkat a képre kattintva találja.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Galéria</h2>
+    <div class="gallery">
+      <img src="images/kep1.jpg" alt="Kép 1"
+           data-title="Naplemente" data-size="40x50 cm" data-type="akril">
+      <img src="images/kep2.jpg" alt="Kép 2"
+           data-title="Tavaszi rét" data-size="50x60 cm" data-type="olaj">
+      <img src="images/kep3.jpg" alt="Kép 3"
+           data-title="Őszi erdő" data-size="45x55 cm" data-type="olaj">
+      <img src="images/kep4.jpg" alt="Kép 4"
+           data-title="Téli táj" data-size="50x70 cm" data-type="olaj">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kapcsolat</h2>
+    <p>Email: reka.balazs77@gmail.com</p>
+  </section>
+
+  <!-- Lightbox overlay -->
+  <div id="lightbox" class="hidden">
+    <span id="close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+    <div id="info-box">
+      <h3 id="info-title"></h3>
+      <p id="info-size"></p>
+      <p id="info-type"></p>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
