@@ -81,10 +81,16 @@ section {
 #lightbox img {
   max-width: 90%;
   max-height: 70%;
+  object-fit: contain;                /* biztos, ami biztos */
+  background: rgba(0, 0, 0, 0.35);    /* sötétebb keret */
+  padding: 15px;
+  box-sizing: border-box;
+
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   margin-bottom: 15px;
 }
+
 
 #close {
   position: absolute;
